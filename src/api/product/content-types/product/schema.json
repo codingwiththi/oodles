@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Imagem": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Camisetas",
+        "Camisas",
+        "Bermudas",
+        "Bonés",
+        "Bags",
+        "Meias",
+        "Calças"
+      ]
+    },
+    "Tamanho": {
+      "type": "enumeration",
+      "enum": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ]
+    }
+  }
+}
